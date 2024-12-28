@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.DebtManagementController" spacing="10" alignment="CENTER" padding="20">
+    <Label text="Debt Management System" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    
+    <TextField fx:id="nameField" promptText="Debt Name"/>
+    <TextField fx:id="amountField" promptText="Amount"/>
+    <TextField fx:id="typeField" promptText="Debt Type"/>
+    
+    <Button text="Add Debt" onAction="#addDebt"/>
+    <Button text="Remove Debt" onAction="#removeDebt"/>
+    
+    <ListView fx:id="debtListView" prefHeight="200" prefWidth="300"/>
+</VBox>

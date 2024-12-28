@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.IncomeManagementController" spacing="10" alignment="CENTER" padding="20">
+    <Label text="Income Management" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    
+    <TextField fx:id="sourceField" promptText="Source"/>
+    <TextField fx:id="amountField" promptText="Amount"/>
+    
+    <Button text="Add Income" onAction="#addIncome"/>
+    
+    <ListView fx:id="incomeListView" prefHeight="200" prefWidth="300"/>
+</VBox>
