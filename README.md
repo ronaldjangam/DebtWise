@@ -45,10 +45,8 @@ DebtWise is a comprehensive financial management system designed to help users m
 
 ## Non-Functional Requirements
 
-
 ### Maintainability
 - Modular code design to enable integration of additional financial categories (e.g., investments).
-
 ---
 
 ## Technology Stack
