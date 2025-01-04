@@ -1,47 +1,59 @@
 # DebtWise
 
 ## Overview
-DebtWise is a comprehensive financial management system designed to help users manage their debts, expenses, and income seamlessly. It provides tools for adding, removing, and displaying financial records, ensuring accurate and validated data entry.
+DebtWise is a financial management application designed to assist users in tracking and managing their debt, income, and expenses efficiently. The application provides a user-friendly interface for managing financial data and analyzing personal finance trends to support better decision-making.
 
 ---
 
-## Features
+## Goals and Objectives
+- Facilitate debt management by allowing users to add, view, and remove debts.
+- Enable income tracking through an intuitive input and display system.
+- Provide tools for managing and analyzing expenses.
+- Deliver a user-friendly graphical interface for interacting with financial data.
+
+## System Overview
+The system architecture is based on a Model-View-Controller (MVC) design pattern:
+- ### Model
+  Represents the data structure and business logic. This includes:
+  
+    - Debt.java
+    - Income.java
+    - Expense.java
+    - MainApp.java
+
+- ### View
+  Provides the graphical user interface (GUI) written in FXML, located in the view folder. It includes layout definitions for input   fields, buttons, and tables to interact with debts, income, and expenses. This includes:
+
+    - DebtManagementView.fxml
+    - ExpenseManagementView.fxml
+    - IncomeManagementView.fxml
+      
+- ### Controller
+  Manages user interactions, input validation, and business logic. The controllers handle adding, removing, and displaying data.
+
+    - DebtManagementController.java
+    - ExpenseController.java
+    - IncomeManagementController.java
+    - MainController.java
+
+---
+
+## Functional Requirements
 
 ### Debt Management
 - **Add New Debt**:
-  - Name
-  - Amount
-  - Type
 - **Remove Debt**: Delete a selected debt from the list.
 - **Display Debts**: View all debts in a list.
 
-#### UI Components:
-- **TextField**: Name, Amount, Type.
-- **ListView**: Displays debt items.
-
-
 ### Expense Management
 - **Add New Expense**:
-  - Description
-  - Amount
 - **Delete Expense**: Remove a selected expense from the list.
 - **Display Expenses**: View all expenses in a list.
 
-#### UI Components:
-- **TextField**: Expense Description, Expense Amount.
-- **ListView**: Displays expense items.
-
 ### Income Management
 - **Add New Income**:
-  - Source
-  - Amount
 - **Display Incomes**: View all income records in a list.
 
-#### UI Components:
-- **TextField**: Source, Amount.
-- **ListView**: Displays income items.
-
----
 
 ## Non-Functional Requirements
 
@@ -58,8 +70,3 @@ DebtWise is a comprehensive financial management system designed to help users m
 - **Java**: For core business logic and data handling.
 
 ---
-
-
-
-
-
