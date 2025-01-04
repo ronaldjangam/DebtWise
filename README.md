@@ -60,6 +60,9 @@ The system architecture is based on a Model-View-Controller (MVC) design pattern
 
 ### Maintainability
 - Modular code design to enable integration of additional financial categories (e.g., investments).
+
+### Usability
+- This application will feature a simple and intuitive user interface.
 ---
 
 ## Technology Stack
