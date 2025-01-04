@@ -1,7 +1,12 @@
 package src.controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
+import java.io.IOException;
 
 public class MainController {
 
@@ -22,14 +27,41 @@ public class MainController {
     }
 
     private void openExpenseView() {
-        // Navigate to Expense view (open ExpenseView.fxml)
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/src/view/ExpenseView.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Add Expense");
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void openIncomeView() {
-        // Navigate to Income view (open IncomeView.fxml)
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/src/view/IncomeView.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Add Income");
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void openDebtView() {
-        // Navigate to Debt view (open DebtView.fxml)
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/src/view/DebtView.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Add Debt");
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
