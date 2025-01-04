@@ -41,17 +41,18 @@ The system architecture is based on a Model-View-Controller (MVC) design pattern
 ## Functional Requirements
 
 ### Debt Management
-- **Add New Debt**:
+- **Add New Debt**: Add a new debt to the list.
 - **Remove Debt**: Delete a selected debt from the list.
 - **Display Debts**: View all debts in a list.
 
 ### Expense Management
-- **Add New Expense**:
+- **Add New Expense**: Add a new expense to the list.
 - **Delete Expense**: Remove a selected expense from the list.
 - **Display Expenses**: View all expenses in a list.
 
 ### Income Management
-- **Add New Income**:
+- **Add New Income**: Add a new income to the list.
+- **Delete Income**: Remove a selected income from the list.
 - **Display Incomes**: View all income records in a list.
 
 
